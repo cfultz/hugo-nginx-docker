@@ -1,7 +1,7 @@
 # This Dockerfile is licensed under the CC0 1.0 Deed
 # https://creativecommons.org/publicdomain/zero/1.0/
 
-FROM nginx:latest
+FROM nginx:alpine-slim
 
 COPY --chown=nginx \
      ./nginx.conf /etc/nginx/conf.d/default.conf
