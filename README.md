@@ -6,6 +6,9 @@ I have attached my ``deploy.sh`` that I used as well to create my site, build th
 
 ## Build
 
+
+``Note: you will need to have Docker and Hugo already installed``
+
 In your Hugo website directory, process the following:
 
 ```
