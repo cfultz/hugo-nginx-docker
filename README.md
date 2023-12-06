@@ -19,7 +19,15 @@ chmod +x deploy.sh
 
 ## Using the pre-built from DockerHub
 
-TODO
+``Note: you will need to have Docker and Hugo already installed``
+
+This will pull the latest pre-compiled container from [Docker Hub](https://hub.docker.com/r/cfultz/hugo-nginx) In your Hugo website directory, process the following:
+
+```
+git clone https://github.com/cfultz/hugo-nginx-docker.git
+chmod +x deploy-hub.sh
+./deploy-hub.sh
+```
 
 ## License
 This work by Caleb Fultz aka [cfultz](https://github.com/cfultz) is licensed under the [``Creative Commons CC0 1.0``](https://creativecommons.org/publicdomain/zero/1.0/legalcode.en) License. All tools and other works utilized are licensed under their respective licenses and copyrights.
