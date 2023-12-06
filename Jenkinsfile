@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'docker build -t cfultz/hugo-nginx .'
+        sh 'docker build -t cfultz/hugo-nginx:ghost .'
       }
     }
     stage('Login') {
@@ -19,7 +19,7 @@ pipeline {
     }
     stage('Push') {
       steps {
-        sh 'docker push cfultz/hugo-nginx'
+        sh 'docker push cfultz/hugo-nginx:ghost'
       }
     }
   }
