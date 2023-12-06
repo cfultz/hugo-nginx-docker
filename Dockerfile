@@ -8,9 +8,9 @@ COPY --chown=nginx \
 
 ## This section isn't needed, but I liked the cute Ghost 404 page 
 ## from https://github.com/tarampampam/error-pages
-##COPY --chown=nginx \
-##     --from=tarampampam/error-pages \
-##    /opt/html/ghost /usr/share/nginx/errorpages/_error-pages
+COPY --chown=nginx \
+    --from=tarampampam/error-pages \
+   /opt/html/ghost /usr/share/nginx/errorpages/_error-pages
 
 RUN rm -rf /usr/share/nginx/html/ && mkdir /usr/share/nginx/html/
 
